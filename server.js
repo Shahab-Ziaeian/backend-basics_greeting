@@ -1,3 +1,6 @@
 import { createServer } from "node:http";
-
-// export const server = …
+const name = "Shahab";
+export const server = createServer((request, response) => {
+  response.statusCode = 200;
+  response.end(`Hello, ${name}!`);
+});
